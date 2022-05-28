@@ -3,18 +3,26 @@
   margin: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
 #game {
-  width: 100vw;
-  height: 50vh;
+  width: 500px;
+  height: 200px;
   border: 1px solid black;
 }
 
 #character {
-  width: 50px;
-  height: 20vh;
+  width: 20px;
+  height: 50px;
   background-color: red;
   position: relative;
-  top: 30vh;
+  top: 150px;
 }
 
 .animate {
@@ -22,25 +30,25 @@
 }
 
 @keyframes jump {
-  0%{top: 30vh}
-  30%{top: 10vh}
-  70%{top: 10vh}
-  100%{top: 30vh}
+  0%{top: 150px}
+  30%{top: 100px}
+  70%{top: 100px}
+  100%{top: 150px}
 }
 
 #block {
-  width: 9vh;
-  height: 9vh;
+  width: 20px;
+  height: 20px;
   background-color: blue;
   position: relative;
-  top: 21vh;
-  left: 100vw;
+  top: 130px;
+  left: 500px;
   animation: block 1s infinite linear;
 }
 
 @keyframes block {
-  0%{left: 100vw;}
-  100%{left: -9vw;}
+  0%{left: 500px;}
+  100%{left: -20px;}
 }
 
 p{
