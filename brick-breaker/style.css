@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameScreen {
+  border: 1px solid black;
+}
+
+img {
+  display: none;
+}
